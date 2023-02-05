@@ -1,0 +1,12 @@
+C:\WebHunters\FridgeWebHunters\FridgeAPI\DAL\bin\Debug\net6.0\DAL.deps.json
+C:\WebHunters\FridgeWebHunters\FridgeAPI\DAL\bin\Debug\net6.0\DAL.dll
+C:\WebHunters\FridgeWebHunters\FridgeAPI\DAL\bin\Debug\net6.0\DAL.pdb
+C:\WebHunters\FridgeWebHunters\FridgeAPI\DAL\obj\Debug\net6.0\DAL.csproj.AssemblyReference.cache
+C:\WebHunters\FridgeWebHunters\FridgeAPI\DAL\obj\Debug\net6.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\WebHunters\FridgeWebHunters\FridgeAPI\DAL\obj\Debug\net6.0\DAL.AssemblyInfoInputs.cache
+C:\WebHunters\FridgeWebHunters\FridgeAPI\DAL\obj\Debug\net6.0\DAL.AssemblyInfo.cs
+C:\WebHunters\FridgeWebHunters\FridgeAPI\DAL\obj\Debug\net6.0\DAL.csproj.CoreCompileInputs.cache
+C:\WebHunters\FridgeWebHunters\FridgeAPI\DAL\obj\Debug\net6.0\DAL.dll
+C:\WebHunters\FridgeWebHunters\FridgeAPI\DAL\obj\Debug\net6.0\refint\DAL.dll
+C:\WebHunters\FridgeWebHunters\FridgeAPI\DAL\obj\Debug\net6.0\DAL.pdb
+C:\WebHunters\FridgeWebHunters\FridgeAPI\DAL\obj\Debug\net6.0\ref\DAL.dll

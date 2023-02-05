@@ -1,0 +1,15 @@
+C:\WebHunters\FridgeWebHunters\FridgeAPI\BLL\bin\Debug\net6.0\BLL.deps.json
+C:\WebHunters\FridgeWebHunters\FridgeAPI\BLL\bin\Debug\net6.0\BLL.dll
+C:\WebHunters\FridgeWebHunters\FridgeAPI\BLL\bin\Debug\net6.0\BLL.pdb
+C:\WebHunters\FridgeWebHunters\FridgeAPI\BLL\bin\Debug\net6.0\DAL.dll
+C:\WebHunters\FridgeWebHunters\FridgeAPI\BLL\bin\Debug\net6.0\DAL.pdb
+C:\WebHunters\FridgeWebHunters\FridgeAPI\BLL\obj\Debug\net6.0\BLL.csproj.AssemblyReference.cache
+C:\WebHunters\FridgeWebHunters\FridgeAPI\BLL\obj\Debug\net6.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\WebHunters\FridgeWebHunters\FridgeAPI\BLL\obj\Debug\net6.0\BLL.AssemblyInfoInputs.cache
+C:\WebHunters\FridgeWebHunters\FridgeAPI\BLL\obj\Debug\net6.0\BLL.AssemblyInfo.cs
+C:\WebHunters\FridgeWebHunters\FridgeAPI\BLL\obj\Debug\net6.0\BLL.csproj.CoreCompileInputs.cache
+C:\WebHunters\FridgeWebHunters\FridgeAPI\BLL\obj\Debug\net6.0\BLL.csproj.CopyComplete
+C:\WebHunters\FridgeWebHunters\FridgeAPI\BLL\obj\Debug\net6.0\BLL.dll
+C:\WebHunters\FridgeWebHunters\FridgeAPI\BLL\obj\Debug\net6.0\refint\BLL.dll
+C:\WebHunters\FridgeWebHunters\FridgeAPI\BLL\obj\Debug\net6.0\BLL.pdb
+C:\WebHunters\FridgeWebHunters\FridgeAPI\BLL\obj\Debug\net6.0\ref\BLL.dll
