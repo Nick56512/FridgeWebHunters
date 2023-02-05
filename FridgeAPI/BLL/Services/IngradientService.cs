@@ -14,5 +14,13 @@ namespace BLL.Services
         public IngradientService(IRepository<Ingredient> repository) : base(repository)
         {
         }
+
+        public async Task<IEnumerable<IngradientDto>> GetIngredientByCategoryAsync(int categoryId) {
+            var result = await GetAllAsync();
+
+            result = result.Where(r => r.CategoryId == categoryId);
+
+            return result;
+        }
     }
 }

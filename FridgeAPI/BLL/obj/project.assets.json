@@ -2883,19 +2883,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\oleks\\.nuget\\packages\\": {}
+    "C:\\Users\\mirik\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\WebHunters\\FridgeWebHunters\\FridgeAPI\\BLL\\BLL.csproj",
+      "projectUniqueName": "C:\\Users\\mirik\\Source\\Repos\\FridgeWebHunters\\FridgeAPI\\BLL\\BLL.csproj",
       "projectName": "BLL",
-      "projectPath": "C:\\WebHunters\\FridgeWebHunters\\FridgeAPI\\BLL\\BLL.csproj",
-      "packagesPath": "C:\\Users\\oleks\\.nuget\\packages\\",
-      "outputPath": "C:\\WebHunters\\FridgeWebHunters\\FridgeAPI\\BLL\\obj\\",
+      "projectPath": "C:\\Users\\mirik\\Source\\Repos\\FridgeWebHunters\\FridgeAPI\\BLL\\BLL.csproj",
+      "packagesPath": "C:\\Users\\mirik\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mirik\\Source\\Repos\\FridgeWebHunters\\FridgeAPI\\BLL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\oleks\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mirik\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2909,8 +2909,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\WebHunters\\FridgeWebHunters\\FridgeAPI\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\WebHunters\\FridgeWebHunters\\FridgeAPI\\DAL\\DAL.csproj"
+            "C:\\Users\\mirik\\Source\\Repos\\FridgeWebHunters\\FridgeAPI\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\mirik\\Source\\Repos\\FridgeWebHunters\\FridgeAPI\\DAL\\DAL.csproj"
             }
           }
         }
@@ -2962,7 +2962,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
