@@ -1,0 +1,87 @@
+.bg__page{
+	object-fit: cover;
+	object-position: center;
+	min-height: 100%;
+	min-width: 640px;
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.relative{
+	position: relative;
+}
+
+.modal__signup{
+	border-radius: 15px;
+	position: fixed;
+	background: white;
+	top: 120px;
+	@include adaptiv-value("top", 200, 140, 0);
+	@include adaptiv-value("left", 680, 39, 0);
+	@include adaptiv-value("width", 600, 300, 0);
+	@include adaptiv-value("height", 530, 290, 0);
+
+	@include adaptiv-value("padding-top", 45, 20, 0);
+	@include adaptiv-value("padding-bottom", 45, 20, 0);
+	@include adaptiv-value("padding-left", 35, 15, 0);
+	@include adaptiv-value("padding-right", 35, 15, 0);
+	max-width: 650px;
+	max-height: 660px;
+
+	.text{
+		@include adaptiv-value("font-size", 20, 10, 0);
+		margin-left: 5px;
+		font-weight: 700;
+		color: #000;
+		p{
+			font-weight: 500;
+		}
+		a{
+			display: inline-block;
+			color: #000;
+			margin-top: 5px;
+		}
+
+	}
+}
+
+.title__signup{
+	font-weight: 800;
+	@include adaptiv-value("font-size", 66, 20, 0);
+	@include adaptiv-value("line-height", 81, 20, 0);
+	@include adaptiv-value("padding-bottom", 15, 10, 0);
+	color: #251F15;
+	text-align: center;
+}
+
+.flex{
+	display: flex;
+	justify-content: center;
+	@include adaptiv-value("gap", 15, 8, 0);
+}
+
+.signup__flex{
+	display: flex;
+	flex-direction: column;
+	@include adaptiv-value("gap", 15, 8, 0);
+}
+
+.Input__full{
+	@include adaptiv-value("width", 510, 270, 0);
+	@include adaptiv-value("height", 60, 40, 0);
+}
+
+.Input__half{
+	width: 50%;
+	@include adaptiv-value("width", 247, 130, 0);
+	@include adaptiv-value("height", 60, 40, 0);
+}
+
+.signup__footer{
+	display: flex;
+	justify-content: space-between;
+	@include adaptiv-value("margin-top", 30, 10, 0);
+}

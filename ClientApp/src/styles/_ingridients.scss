@@ -1,0 +1,19 @@
+.ingridients__page{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 40px;
+	position: relative;
+
+	.page__tabs{
+		flex: 0 1 23%;
+		@include adaptiv-value("margin-right", 50, 20, 0);
+	}
+
+	.page__ingridients{
+		flex: 0 1 77%;
+		display: grid;
+		grid-template-columns: repeat(4, 22%);
+		grid-template-rows: repeat(4, 19.5%);
+		@include adaptiv-value("gap", 18, 10, 0);
+	}
+}
