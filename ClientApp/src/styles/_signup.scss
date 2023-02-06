@@ -21,15 +21,12 @@
 	top: 120px;
 	@include adaptiv-value("top", 200, 140, 0);
 	@include adaptiv-value("left", 660, 39, 0);
-	@include adaptiv-value("width", 600, 300, 0);
-	@include adaptiv-value("height", 530, 290, 0);
+
 
 	@include adaptiv-value("padding-top", 45, 20, 0);
 	@include adaptiv-value("padding-bottom", 45, 20, 0);
 	@include adaptiv-value("padding-left", 35, 15, 0);
 	@include adaptiv-value("padding-right", 35, 15, 0);
-	max-width: 650px;
-	max-height: 660px;
 
 	.text{
 		@include adaptiv-value("font-size", 20, 10, 0);

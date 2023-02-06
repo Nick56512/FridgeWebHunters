@@ -30,7 +30,6 @@ function SignUp(){
 				'Content-Type': 'application/json'
 				},
 				accept: '*/*',
-				mode: 'no-cors',
 				body: JSON.stringify(userData)
 				
 			})

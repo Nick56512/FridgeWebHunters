@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import Loading from "../atoms/Loading"
+import RecipeCard from "../organisms/RecipeCard"
 
 function Recipes(){
 
@@ -27,18 +28,17 @@ function Recipes(){
 	return(
 		<div className="container">
 			<h2 className="main__title">Рецепти</h2>
-			{isLoading 
-			? <Loading></Loading>
-			:
-			recipes.map(recipe => (
-				<Link key={recipe.id} to={`/recipes/${recipe.id}`}>
-					<div>
-						<img alt={recipe.title} src={recipe.url} width='600px' height='600px'></img>
-						<p>{recipe.title}</p>
-					</div>
-				</Link>
-				))
-			}
+			<div className="page__recipes">
+				{isLoading 
+				? <Loading></Loading>
+				:
+				recipes.map(recipe => (
+					<Link to={`/recipes/${recipe.id}`}>
+						<RecipeCard key={recipe.id} title={recipe.title} src={recipe.url}></RecipeCard>
+					</Link>
+					))
+				}
+			</div>
 		</div>
 	)
 }

@@ -363,14 +363,10 @@ header .navigation .header__link:hover {
   top: 120px;
   top: calc(140px + 60 * ((100vw - 375px) / 1545));
   left: calc(39px + 621 * ((100vw - 375px) / 1545));
-  width: calc(300px + 300 * ((100vw - 375px) / 1545));
-  height: calc(290px + 240 * ((100vw - 375px) / 1545));
   padding-top: calc(20px + 25 * ((100vw - 375px) / 1545));
   padding-bottom: calc(20px + 25 * ((100vw - 375px) / 1545));
   padding-left: calc(15px + 20 * ((100vw - 375px) / 1545));
   padding-right: calc(15px + 20 * ((100vw - 375px) / 1545));
-  max-width: 650px;
-  max-height: 660px;
 }
 .modal__signup .text {
   font-size: calc(10px + 10 * ((100vw - 375px) / 1545));
@@ -477,4 +473,24 @@ header .navigation .header__link:hover {
 
 .hide {
   visibility: hidden;
+}
+
+.page__recipes {
+  display: grid;
+  grid-template-columns: repeat(3, 31%);
+}
+
+.recipe__card {
+  background: white;
+}
+.recipe__card .main__img {
+  border-top-left-radius: calc(10px + 10 * ((100vw - 375px) / 1545));
+  border-top-right-radius: calc(10px + 10 * ((100vw - 375px) / 1545));
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  aspect-ratio: 458/263;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(50%);
 }

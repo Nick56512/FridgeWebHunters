@@ -1,8 +1,9 @@
 import "../styles/css/index.css"
-
+import { useEffect } from "react";
 
 
 const DropDownList = ({ options, onChange }) => {
+
 
 	let tabs = document.querySelectorAll('.tabs__item')
 	

@@ -1,0 +1,15 @@
+.recipe__card{
+	background: white;
+
+	.main__img{
+		@include adaptiv-value("border-top-left-radius", 20, 10, 0);
+		@include adaptiv-value("border-top-right-radius", 20, 10, 0);
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+		aspect-ratio: 458/263;
+		width: 100%;
+		object-fit: cover;
+		object-position: center;
+		filter: brightness(50%);
+	}
+}

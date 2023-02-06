@@ -11,27 +11,24 @@ function Ingredients(){
 	const [isLoading, setLoading] = useState(false)
 
 	useEffect(() => {
-		getIngredients()
+			getIngredients()
 	}, [])
 
 	async function getIngredients(){
 		setLoading(true)
 		
 		setTimeout(async () => {
-		await fetch('https://dummyjson.com/products')
-		.then(res => res.json())
-		.then(data => {
-			setIngredients(data.products.slice(0, 20))
-			setFiltered(data.products.slice(0, 20))
-		})
-		.catch(e => console.log(e))
-		setLoading(false)
+			await fetch('https://dummyjson.com/products')
+			.then(res => res.json())
+			.then(data => {
+				setIngredients(data.products.slice(0, 20))
+				setFiltered(data.products.slice(0, 20))
+			})
+			.catch(e => console.log(e))
+			setLoading(false)
 		}, 300)
-		
 
 	}
-
-	
 
 	function filterInredients(filter){
 		setFilter(filter)
@@ -54,11 +51,13 @@ function Ingredients(){
 						options={[
 							{value: 'all', name: "Усі"},
 							{value: 'laptops', name: "М'ясні продукти"},
-							{value: 'smartphones', name: "Молочні продукти"},
+							{value: 'smartphones', name: 'Молочні продукти'},
 							{value: 'vegetables', name: "Овочі"},
 							{value: 'fruits', name: "Фрукти та ягоди"},
 							{value: 'tert', name: "Рибні продукти"},
-							{value: '3tgfde', name: "Гриби"}
+							{value: '3tgftde', name: "Гриби"},
+							{value: '3tgfrde', name: "Гриби"},
+							{value: '3tgfdse', name: "Гриби"}
 						]}
 					/>
 					<div>
