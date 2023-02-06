@@ -11,7 +11,7 @@
         "projectName": "DAL",
         "projectPath": "C:\\Users\\mirik\\source\\repos\\FridgeWebHunters\\FridgeAPI\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\mirik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mirik\\Source\\Repos\\FridgeWebHunters\\FridgeAPI\\DAL\\obj\\",
+        "outputPath": "C:\\Users\\mirik\\source\\repos\\FridgeWebHunters\\FridgeAPI\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mirik\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -50,7 +50,10 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.UseCors();
+app.UseCors(opt => {
+    opt.AllowAnyOrigin();
+    opt.WithHeaders();
+});
 
 app.MapControllers();
 
