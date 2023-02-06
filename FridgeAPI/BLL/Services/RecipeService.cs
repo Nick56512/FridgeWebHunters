@@ -51,10 +51,10 @@ namespace BLL.Services
                 Dictionary<RecipeDto, List<int>> dictionary = new Dictionary<RecipeDto, List<int>>();
 
                 foreach (var recipeIngredient in recipeIngradients) { 
-                    if (!dictionary.ContainsKey(recipeIngredient.RecipeDto))
-                        dictionary.Add(recipeIngredient.RecipeDto, new List<int>());
+                    if (!dictionary.ContainsKey(recipeIngredient.Recipe))
+                        dictionary.Add(recipeIngredient.Recipe, new List<int>());
 
-                    dictionary[recipeIngredient.RecipeDto].Add(recipeIngredient.IngradientId);
+                    dictionary[recipeIngredient.Recipe].Add(recipeIngredient.IngradientId);
                 }
 
                 List<RecipeDto> result = new List<RecipeDto>();
