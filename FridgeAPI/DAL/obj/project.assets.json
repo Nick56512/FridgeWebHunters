@@ -2090,11 +2090,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KIBINNANEKO\\Desktop\\Amogus\\FridgeWebHunters\\FridgeAPI\\DAL\\DAL.csproj",
+      "projectUniqueName": "c:\\Users\\KIBINNANEKO\\Desktop\\Amogus\\FridgeWebHunters\\FridgeAPI\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "C:\\Users\\KIBINNANEKO\\Desktop\\Amogus\\FridgeWebHunters\\FridgeAPI\\DAL\\DAL.csproj",
+      "projectPath": "c:\\Users\\KIBINNANEKO\\Desktop\\Amogus\\FridgeWebHunters\\FridgeAPI\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\KIBINNANEKO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KIBINNANEKO\\Desktop\\Amogus\\FridgeWebHunters\\FridgeAPI\\DAL\\obj\\",
+      "outputPath": "c:\\Users\\KIBINNANEKO\\Desktop\\Amogus\\FridgeWebHunters\\FridgeAPI\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\KIBINNANEKO\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2155,5 +2155,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Ошибка чтения файла кэша c:\\Users\\KIBINNANEKO\\Desktop\\Amogus\\FridgeWebHunters\\FridgeAPI\\DAL\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

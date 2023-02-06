@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CyFpYMPaNln5bX7jvHOP7+qMjqOflo09evqpn/MwRjXateHLGVI5eMhK8OIYPo03lkfUtdX8z3sn7kG3PsjgTg==",
+  "dgSpecHash": "kBBb30JK9OG1Wgh3ssGF9vo7qPpatdR13Ht2oCMpkQKQU/dzOlX4HAozNtUH7mmUtngVxfvVBK4pDPA8Qo1PYA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\KIBINNANEKO\\Desktop\\Amogus\\FridgeWebHunters\\FridgeAPI\\FridgeAPI\\FridgeAPI.csproj",
+  "projectFilePath": "c:\\Users\\KIBINNANEKO\\Desktop\\Amogus\\FridgeWebHunters\\FridgeAPI\\FridgeAPI\\FridgeAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\KIBINNANEKO\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\KIBINNANEKO\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
@@ -81,5 +81,12 @@
     "C:\\Users\\KIBINNANEKO\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512",
     "C:\\Users\\KIBINNANEKO\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Ошибка чтения файла кэша c:\\Users\\KIBINNANEKO\\Desktop\\Amogus\\FridgeWebHunters\\FridgeAPI\\FridgeAPI\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
