@@ -1,8 +1,8 @@
 
-function Button({children, props}) {
+function Button({children, ...props}) {
 	return (
 		<div>
-			<button className="Button" {...props}>{children}</button>
+			<button {...props} className="Button">{children}</button>
 		</div>
 	);
 }

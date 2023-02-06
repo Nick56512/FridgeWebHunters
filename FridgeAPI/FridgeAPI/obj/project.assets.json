@@ -3161,19 +3161,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\oleks\\.nuget\\packages\\": {}
+    "C:\\Users\\KIBINNANEKO\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\WebHunters\\FridgeWebHunters\\FridgeAPI\\FridgeAPI\\FridgeAPI.csproj",
+      "projectUniqueName": "C:\\Users\\KIBINNANEKO\\Desktop\\Amogus\\FridgeWebHunters\\FridgeAPI\\FridgeAPI\\FridgeAPI.csproj",
       "projectName": "FridgeAPI",
-      "projectPath": "C:\\WebHunters\\FridgeWebHunters\\FridgeAPI\\FridgeAPI\\FridgeAPI.csproj",
-      "packagesPath": "C:\\Users\\oleks\\.nuget\\packages\\",
-      "outputPath": "C:\\WebHunters\\FridgeWebHunters\\FridgeAPI\\FridgeAPI\\obj\\",
+      "projectPath": "C:\\Users\\KIBINNANEKO\\Desktop\\Amogus\\FridgeWebHunters\\FridgeAPI\\FridgeAPI\\FridgeAPI.csproj",
+      "packagesPath": "C:\\Users\\KIBINNANEKO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\KIBINNANEKO\\Desktop\\Amogus\\FridgeWebHunters\\FridgeAPI\\FridgeAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\oleks\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\KIBINNANEKO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3187,8 +3187,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\WebHunters\\FridgeWebHunters\\FridgeAPI\\BLL\\BLL.csproj": {
-              "projectPath": "C:\\WebHunters\\FridgeWebHunters\\FridgeAPI\\BLL\\BLL.csproj"
+            "C:\\Users\\KIBINNANEKO\\Desktop\\Amogus\\FridgeWebHunters\\FridgeAPI\\BLL\\BLL.csproj": {
+              "projectPath": "C:\\Users\\KIBINNANEKO\\Desktop\\Amogus\\FridgeWebHunters\\FridgeAPI\\BLL\\BLL.csproj"
             }
           }
         }
@@ -3231,7 +3231,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
