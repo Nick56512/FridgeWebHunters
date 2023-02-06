@@ -1,6 +1,6 @@
 .ingridient__card{
 	font-size: 16px;
-	@include adaptiv-value("border-radius", 20, 10, 1);
+	@include adaptiv-value("border-radius", 20, 10, 0);
 	background-color: white;
 
 	.card__img{
@@ -11,8 +11,8 @@
 
 
 	.main__img{
-		@include adaptiv-value("border-top-left-radius", 20, 10, 1);
-		@include adaptiv-value("border-top-right-radius", 20, 10, 1);
+		@include adaptiv-value("border-top-left-radius", 20, 10, 0);
+		@include adaptiv-value("border-top-right-radius", 20, 10, 0);
 		border-bottom-left-radius: 0px;
 		border-bottom-right-radius: 0px;
 		aspect-ratio: 190/178;
@@ -37,8 +37,8 @@
 		@include adaptiv-value("font-size", 16, 9, 0);
 		display: flex;
 		justify-content: space-between;
-		@include adaptiv-value("margin-left", 20, 10, 1);
-		@include adaptiv-value("margin-right", 20, 10, 1);
-		margin: 5px 20px;
+		margin: 8px 20px;
+		@include adaptiv-value("margin-left", 20, 10, 0);
+		@include adaptiv-value("margin-right", 20, 10, 0);
 	}
 }
