@@ -87,7 +87,7 @@ namespace FridgeOfWebHunter.Controllers.ApiControllers
 
 
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [HttpPost]
+        [HttpPost("/logout")]
         public async Task<ActionResult> UserLogout()
         {
             await signInManager.SignOut();
