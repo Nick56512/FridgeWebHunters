@@ -9,7 +9,6 @@
 		position: relative;
 	}
 
-
 	.main__img{
 		@include adaptiv-value("border-top-left-radius", 20, 10, 0);
 		@include adaptiv-value("border-top-right-radius", 20, 10, 0);

@@ -29,7 +29,6 @@ function SignUp(){
 				headers: {
 				'Content-Type': 'application/json'
 				},
-				accept: '*/*',
 				body: JSON.stringify(userData)
 				
 			})

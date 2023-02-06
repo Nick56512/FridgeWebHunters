@@ -33,8 +33,8 @@ function Recipes(){
 				? <Loading></Loading>
 				:
 				recipes.map(recipe => (
-					<Link to={`/recipes/${recipe.id}`}>
-						<RecipeCard key={recipe.id} title={recipe.title} src={recipe.url}></RecipeCard>
+					<Link key={recipe.id} to={`/recipes/${recipe.id}`}>
+						<RecipeCard id={recipe.id} title={recipe.title} src={recipe.url}></RecipeCard>
 					</Link>
 					))
 				}
