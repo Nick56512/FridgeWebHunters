@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YtaLrnI/wcgTbpxNOA5gnjqXdjIRiz5rT8BI0U2jRZYt73327N9gkSPTwFl3L5ZIX3OryIhpP4c411i+BjRDwQ==",
+  "dgSpecHash": "1eDu9SEevBQtrIgUUfvmqZ5z6cNQpUi9qVeX0qR9Mvb6cc/xcrYME5PNapUlgyPjgy8yejis0AVG6sagllZWSA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mirik\\Source\\Repos\\FridgeWebHunters\\FridgeAPI\\FridgeAPI\\FridgeAPI.csproj",
+  "projectFilePath": "C:\\Users\\mirik\\source\\repos\\FridgeWebHunters\\FridgeAPI\\FridgeAPI\\FridgeAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mirik\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\mirik\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

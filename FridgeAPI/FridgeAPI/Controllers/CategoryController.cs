@@ -14,7 +14,7 @@ namespace FridgeOfWebHunter.Controllers.ApiControllers
         }
 
         [HttpGet]
-        [Route("/getall")]
+        [Route("/getcategories")]
         public async Task<ActionResult> GetAll() {
             var result = await categoryService.GetAllAsync();
 
@@ -25,7 +25,7 @@ namespace FridgeOfWebHunter.Controllers.ApiControllers
         }
 
         [HttpGet]
-        [Route("/get/{id}")]
+        [Route("/getcategories/{id}")]
         public ActionResult GetById(int id)
         {
             var result = categoryService.Get(id);

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mirik\\Source\\Repos\\FridgeWebHunters\\FridgeAPI\\FridgeAPI\\FridgeAPI.csproj": {}
+    "C:\\Users\\mirik\\source\\repos\\FridgeWebHunters\\FridgeAPI\\FridgeAPI\\FridgeAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mirik\\Source\\Repos\\FridgeWebHunters\\FridgeAPI\\BLL\\BLL.csproj": {
+    "C:\\Users\\mirik\\source\\repos\\FridgeWebHunters\\FridgeAPI\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mirik\\Source\\Repos\\FridgeWebHunters\\FridgeAPI\\BLL\\BLL.csproj",
+        "projectUniqueName": "C:\\Users\\mirik\\source\\repos\\FridgeWebHunters\\FridgeAPI\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "C:\\Users\\mirik\\Source\\Repos\\FridgeWebHunters\\FridgeAPI\\BLL\\BLL.csproj",
+        "projectPath": "C:\\Users\\mirik\\source\\repos\\FridgeWebHunters\\FridgeAPI\\BLL\\BLL.csproj",
         "packagesPath": "C:\\Users\\mirik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mirik\\Source\\Repos\\FridgeWebHunters\\FridgeAPI\\BLL\\obj\\",
+        "outputPath": "C:\\Users\\mirik\\source\\repos\\FridgeWebHunters\\FridgeAPI\\BLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mirik\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\mirik\\Source\\Repos\\FridgeWebHunters\\FridgeAPI\\DAL\\DAL.csproj": {
-                "projectPath": "C:\\Users\\mirik\\Source\\Repos\\FridgeWebHunters\\FridgeAPI\\DAL\\DAL.csproj"
+              "C:\\Users\\mirik\\source\\repos\\FridgeWebHunters\\FridgeAPI\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\mirik\\source\\repos\\FridgeWebHunters\\FridgeAPI\\DAL\\DAL.csproj"
               }
             }
           }
@@ -85,12 +85,12 @@
         }
       }
     },
-    "C:\\Users\\mirik\\Source\\Repos\\FridgeWebHunters\\FridgeAPI\\DAL\\DAL.csproj": {
+    "C:\\Users\\mirik\\source\\repos\\FridgeWebHunters\\FridgeAPI\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mirik\\Source\\Repos\\FridgeWebHunters\\FridgeAPI\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\mirik\\source\\repos\\FridgeWebHunters\\FridgeAPI\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\mirik\\Source\\Repos\\FridgeWebHunters\\FridgeAPI\\DAL\\DAL.csproj",
+        "projectPath": "C:\\Users\\mirik\\source\\repos\\FridgeWebHunters\\FridgeAPI\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\mirik\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\mirik\\Source\\Repos\\FridgeWebHunters\\FridgeAPI\\DAL\\obj\\",
         "projectStyle": "PackageReference",
@@ -154,14 +154,14 @@
         }
       }
     },
-    "C:\\Users\\mirik\\Source\\Repos\\FridgeWebHunters\\FridgeAPI\\FridgeAPI\\FridgeAPI.csproj": {
+    "C:\\Users\\mirik\\source\\repos\\FridgeWebHunters\\FridgeAPI\\FridgeAPI\\FridgeAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mirik\\Source\\Repos\\FridgeWebHunters\\FridgeAPI\\FridgeAPI\\FridgeAPI.csproj",
+        "projectUniqueName": "C:\\Users\\mirik\\source\\repos\\FridgeWebHunters\\FridgeAPI\\FridgeAPI\\FridgeAPI.csproj",
         "projectName": "FridgeAPI",
-        "projectPath": "C:\\Users\\mirik\\Source\\Repos\\FridgeWebHunters\\FridgeAPI\\FridgeAPI\\FridgeAPI.csproj",
+        "projectPath": "C:\\Users\\mirik\\source\\repos\\FridgeWebHunters\\FridgeAPI\\FridgeAPI\\FridgeAPI.csproj",
         "packagesPath": "C:\\Users\\mirik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mirik\\Source\\Repos\\FridgeWebHunters\\FridgeAPI\\FridgeAPI\\obj\\",
+        "outputPath": "C:\\Users\\mirik\\source\\repos\\FridgeWebHunters\\FridgeAPI\\FridgeAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mirik\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -178,8 +178,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\mirik\\Source\\Repos\\FridgeWebHunters\\FridgeAPI\\BLL\\BLL.csproj": {
-                "projectPath": "C:\\Users\\mirik\\Source\\Repos\\FridgeWebHunters\\FridgeAPI\\BLL\\BLL.csproj"
+              "C:\\Users\\mirik\\source\\repos\\FridgeWebHunters\\FridgeAPI\\BLL\\BLL.csproj": {
+                "projectPath": "C:\\Users\\mirik\\source\\repos\\FridgeWebHunters\\FridgeAPI\\BLL\\BLL.csproj"
               }
             }
           }
