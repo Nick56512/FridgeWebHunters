@@ -58,7 +58,13 @@ namespace FridgeAPI.Controllers
             {
                 UserDto user = await userService.FindByEmailAsync(currentUserEmail);
                 var collection = (await ingradientUserService.GetUserIngredientsByUserIdAsync(user.Id));
-                var result= collection.Select(x=>ingredientService.Get(x.IngradientId));
+                //var result= collection.Select(x=>ingredientService.Get(x.IngradientId));
+
+                var result = new List<Tuple<IngradientDto, IngradientUserDto>>();
+
+                foreach (var item in collection) {
+                    result.Add(Tuple.Create(ingredientService.Get(item.IngradientId), item));
+                }
 
                 return Ok(result);
             }

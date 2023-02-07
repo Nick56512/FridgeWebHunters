@@ -2085,19 +2085,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\KIBINNANEKO\\.nuget\\packages\\": {}
+    "C:\\Users\\mirik\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KIBINNANEKO\\Desktop\\Hakaton\\FridgeWebHunters\\FridgeAPI\\DAL\\DAL.csproj",
+      "projectUniqueName": "C:\\Users\\mirik\\source\\repos\\FridgeWebHunters\\FridgeAPI\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "C:\\Users\\KIBINNANEKO\\Desktop\\Hakaton\\FridgeWebHunters\\FridgeAPI\\DAL\\DAL.csproj",
-      "packagesPath": "C:\\Users\\KIBINNANEKO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KIBINNANEKO\\Desktop\\Hakaton\\FridgeWebHunters\\FridgeAPI\\DAL\\obj\\",
+      "projectPath": "C:\\Users\\mirik\\source\\repos\\FridgeWebHunters\\FridgeAPI\\DAL\\DAL.csproj",
+      "packagesPath": "C:\\Users\\mirik\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mirik\\source\\repos\\FridgeWebHunters\\FridgeAPI\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\KIBINNANEKO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mirik\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2152,7 +2152,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
