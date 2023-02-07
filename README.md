@@ -8,3 +8,4 @@
 - frontend частина: JS, HTML, CSS, React. Хостинг на Netlify
 
 Було виконано 
+
