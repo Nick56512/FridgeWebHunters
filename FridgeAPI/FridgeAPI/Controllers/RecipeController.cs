@@ -16,10 +16,13 @@ namespace FridgeOfWebHunter.Controllers.ApiControllers
     {
         UserService userManager;
         RecipeService recipeService;
-        public RecipeController(UserService userManager, RecipeService recipeService)
+        IngradientRecipeService ingradientRecipeService;
+
+        public RecipeController(UserService userManager, RecipeService recipeService, IngradientRecipeService ingradientRecipeService)
         {
             this.recipeService = recipeService;
             this.userManager = userManager;
+            this.ingradientRecipeService = ingradientRecipeService;
         }
 
         [HttpGet]
@@ -62,16 +65,17 @@ namespace FridgeOfWebHunter.Controllers.ApiControllers
         [Route("/get/{id}")]
         public async Task<ActionResult> GetRecipeById(int id)
         {
-            var result = await recipeService.GetAsync(id);
+            var resultRecipe = await recipeService.GetAsync(id);
 
-            if (!result.Equals(null))
-                return Json(result);
+            var resultIngr = await ingradientRecipeService.GetByRecipeId(id);
+
+            Tuple<RecipeDto, IEnumerable<IngradientRecipeDto>> response = Tuple.Create(resultRecipe, resultIngr);
+
+            if (!response.Equals(null))
+                return Json(response);
 
             return BadRequest();
         }
-
-        [HttpGet]
-        [Route("/")]
 
         [HttpDelete]
         [Route("/delete/{id}")]
