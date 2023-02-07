@@ -17,12 +17,14 @@ namespace FridgeOfWebHunter.Controllers.ApiControllers
         UserService userManager;
         RecipeService recipeService;
         IngradientRecipeService ingradientRecipeService;
+        IngradientService ingradientService;
 
-        public RecipeController(UserService userManager, RecipeService recipeService, IngradientRecipeService ingradientRecipeService)
+        public RecipeController(UserService userManager, RecipeService recipeService, IngradientRecipeService ingradientRecipeService, IngradientService ingradientService)
         {
             this.recipeService = recipeService;
             this.userManager = userManager;
             this.ingradientRecipeService = ingradientRecipeService;
+            this.ingradientService = ingradientService;
         }
 
         [HttpGet]
@@ -67,9 +69,15 @@ namespace FridgeOfWebHunter.Controllers.ApiControllers
         {
             var resultRecipe = await recipeService.GetAsync(id);
 
-            var resultIngr = await ingradientRecipeService.GetByRecipeId(id);
+            var resultIngrRecipe = await ingradientRecipeService.GetByRecipeId(id);
 
-            Tuple<RecipeDto, IEnumerable<IngradientRecipeDto>> response = Tuple.Create(resultRecipe, resultIngr);
+            List<Tuple<IngradientDto, IngradientRecipeDto>> resultTuple = new List<Tuple<IngradientDto, IngradientRecipeDto>>();
+
+            foreach (var item in resultIngrRecipe) {
+                resultTuple.Add(Tuple.Create(ingradientService.Get(item.IngradientId), item));
+            }
+
+            Tuple<RecipeDto, IEnumerable<Tuple<IngradientDto,IngradientRecipeDto>>> response = Tuple.Create(resultRecipe, resultTuple.AsEnumerable());
 
             if (!response.Equals(null))
                 return Json(response);
