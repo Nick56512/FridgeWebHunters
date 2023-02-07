@@ -11,9 +11,9 @@ namespace BLL.DTO
     {
         public int Id { get; set; }
         public int IngradientId { get; set; }
-        public IngradientDto IngredientDto { get; set; }
+        public IngradientDto Ingredient { get; set; }
         public string UserId { get; set; }
-        public UserDto UserDto { get; set; }
+        public UserDto User { get; set; }
         public int Quantity { get; set; }
         public double Weight { get; set; }
     }
