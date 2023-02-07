@@ -2,6 +2,17 @@ import "../styles/css/index.css"
 
 function IngredientCard(props){
 
+	let category = props.category
+
+	if(category == 10) category = '🥛'
+	if(category == 11) category = '🍞'
+	if(category == 12) category = '🥩'
+	if(category == 13) category = '🍷'
+	if(category == 14) category = '🌭'
+	if(category == 15) category = '🍰'
+	if(category == 16) category = '🥦'
+	if(category == 17) category = '🍎'
+
 	return(
 		<div className="ingridient__card">
 			<div className="card__img">
@@ -9,8 +20,8 @@ function IngredientCard(props){
 				<div className="img__title">{props.title}</div>
 			</div>
 			<div className="card__block">
-				<div>10</div>
-				<div className="category">Кат: 1</div>
+				<div className="category">{props.quantity} гр.</div>
+				<div className="category">Кат: {category}</div>
 			</div>
 		</div>
 	)

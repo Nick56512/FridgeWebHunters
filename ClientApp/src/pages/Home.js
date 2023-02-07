@@ -18,9 +18,9 @@ function Home(){
 	async function getRecipes(){
 			setLoading(true)
 			setTimeout(async () => {
-				await fetch('https://jsonplaceholder.typicode.com/photos')
+				await fetch('https://fridgewebappwebhunters.azurewebsites.net/get')
 				.then(res => res.json())
-				.then(data => data.slice(0, 20))
+				.then(data => data.slice(0, 6))
 				.then(slicedData => setRecipes(slicedData))
 				.catch(e => console.log(e))
 				setLoading(false)

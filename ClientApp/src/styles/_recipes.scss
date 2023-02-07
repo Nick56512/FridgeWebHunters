@@ -62,7 +62,7 @@
 			@include adaptiv-value("padding-left", 15, 10, 0);
 			@include adaptiv-value("padding-right", 15, 5, 0);
 
-			@media (max-width: 359px){
+			@media (max-width: 451px){
 				margin-top: 15px;
 			}
 		}
@@ -71,10 +71,9 @@
 }
 
 
-
-
 .page__recipes{
 	display: grid;
+	margin-bottom: 30px;
 	@include adaptiv-value("gap", 25, 10, 0);
 	grid-template-columns: repeat(3, 1fr);
 

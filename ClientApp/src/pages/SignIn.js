@@ -27,7 +27,7 @@ function SignIn(){
 			"email": inputEmail.value,
 			"password": inputPassword.value
 		}
-			let response = await fetch('https://localhost:7018/login', {
+			let response = await fetch('https://fridgewebappwebhunters.azurewebsites.net/login', {
 			method: 'POST',
 			headers: {
 			'Content-Type': 'application/json'},

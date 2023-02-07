@@ -4,7 +4,7 @@ function NotFoundPage(){
 
 	return(
 		<div className="NotFoundPage">
-			gftrehterherhthr
+			<img className="bg__page" src={require('../assets/error.jpg')}></img>
 		</div>
 	)
 }

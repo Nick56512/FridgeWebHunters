@@ -2,14 +2,24 @@ import "../styles/css/index.css"
 
 function HomeRecipeCard(props){
 
+	let title = props.title
+	let description = props.title
+
+	if(title.length > 40){
+		title = title.slice(0, 40) + '..'
+	}
+
+	if(description.length > 50){
+		description = description.slice(0, 50) + '..'
+	}
+
 	return(
 		<div className="recipe__card">
 			<div className="card__img">
 				<img className="main__img" alt={props.title} src={props.src}></img>
 					<div className="img__title">
-						<div>{props.title}</div>
-						<div className="description">{props.title}</div>
-						<div className="diff">Складність: {props.id*10} хв.</div>
+						<div>{title}</div>
+						<div className="description">{description}</div>
 					</div>
 			</div>
 		</div>

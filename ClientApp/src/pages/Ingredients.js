@@ -10,21 +10,24 @@ function Ingredients(){
 	const [filtered, setFiltered] = useState([])
 	const [isLoading, setLoading] = useState(false)
 
-	useEffect(() => {
-			getIngredients()
-	}, [])
+		useEffect(() => {
+			getMyIngredients()
+		}, [])
 
-	async function getIngredients(){
+	async function getMyIngredients(){
 		setLoading(true)
-		
 		setTimeout(async () => {
-			await fetch('https://dummyjson.com/products')
-			.then(res => res.json())
-			.then(data => {
-				setIngredients(data.products.slice(0, 20))
-				setFiltered(data.products.slice(0, 20))
-			})
-			.catch(e => console.log(e))
+			let token=sessionStorage.getItem('access_token');
+			let response = await fetch(`https://fridgewebappwebhunters.azurewebsites.net/getMyIngredients`, {
+			method: 'GET',
+			headers:{
+					"Authorization":`bearer ${token}`
+			}
+			}).
+			then(data => data.json()).
+			then(jsData => {
+				setIngredients(jsData) 
+				setFiltered(jsData)})
 			setLoading(false)
 		}, 300)
 
@@ -36,7 +39,7 @@ function Ingredients(){
 			setFiltered([...ingredients])
 		}
 		else{
-			setFiltered([...ingredients.filter(item => item.category === filter)])
+			setFiltered([...ingredients.filter(item => item.item1.categoryId === filter)])
 		}
 	}
 
@@ -52,19 +55,16 @@ function Ingredients(){
 							onChange={filterInredients}
 							options={[
 								{value: 'all', name: "Усі"},
-								{value: 'laptops', name: "Молочні"},
-								{value: 'smartphones', name: 'Хлібобулочні'},
-								{value: 'vegetables', name: "М'ясні"},
-								{value: 'fruits', name: "Алкогольні"},
-								{value: 'tert', name: "Ковбасні"},
-								{value: '3tgftde', name: "Солодощі"},
-								{value: '3tgfrde', name: "Овочі"},
-								{value: '3tgfdse', name: "Фрукти"}
+								{value: 10, name: "Молочні"},
+								{value: 11, name: 'Хлібобулочні'},
+								{value: 12, name: "М'ясні"},
+								{value: 13, name: "Алкогольні"},
+								{value: 14, name: "Ковбасні"},
+								{value: 15, name: "Солодощі"},
+								{value: 16, name: "Овочі"},
+								{value: 17, name: "Фрукти"}
 							]}
 						/>
-						<div>
-							<button className='tabs__button'>Що я можу приготувати?</button>
-						</div>
 					</div>
 					<div className='page__ingridients'>
 						{isLoading 
@@ -73,10 +73,11 @@ function Ingredients(){
 						:
 						filtered.map(ingredient => (
 							<IngredientCard
-								key={ingredient.id}
-								title={ingredient.title}
-								image={ingredient.thumbnail}
-								category={ingredient.category}
+								key={ingredient.item1.id}
+								title={ingredient.item1.title}
+								image={ingredient.item1.icon}
+								category={ingredient.item1.categoryId}
+								quantity={ingredient.item2.weight}
 							/>
 						))
 						}

@@ -13,6 +13,7 @@
 		flex: 0 1 77%;
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
+		align-content: space-between;
 		@include adaptiv-value("gap", 18, 10, 0);
 
 		@media (max-width: 780px){

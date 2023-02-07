@@ -27,7 +27,7 @@ function SignUp(){
 				"email": inputEmail.value,
 				"password": inputPassword.value
 			}
-			let response = await fetch('https://localhost:7018/registration', {
+			let response = await fetch('https://fridgewebappwebhunters.azurewebsites.net/registration', {
 				method: 'POST',
 				headers: {
 				'Content-Type': 'application/json'
