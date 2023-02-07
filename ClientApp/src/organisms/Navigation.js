@@ -1,7 +1,10 @@
 import MyNavLink from "../atoms/MyNavLink"
 import "../styles/css/index.css"
+import { useStateContext } from "../context/context"
 
 function Navigation(){
+
+	const {isAuth, name, lastName} = useStateContext();
 
 	return(
 		<header>
@@ -22,7 +25,11 @@ function Navigation(){
 					<MyNavLink className="header__link" to="/ingredients">Холодильник</MyNavLink>
 				</div>
 				<div className="navigation__user">
-					<MyNavLink className="header__link user" to="/signIn">Увійти</MyNavLink>
+					{isAuth
+					?<div className="username">{name}<span> {lastName}</span></div>
+					:<MyNavLink className="header__link user" to="/signIn">Увійти</MyNavLink>
+					}
+					
 				</div>
 			 </div>
 		</header>

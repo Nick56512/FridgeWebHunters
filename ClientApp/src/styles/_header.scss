@@ -20,7 +20,7 @@ header{
 			margin: -6px 0;
 
 			.logo__img{
-				@include adaptiv-value("margin-top", 16, 4, 0);
+				@include adaptiv-value("margin-top", 16, 6, 0);
 				@include adaptiv-value("margin-bottom", 16, 8, 0);
 			}
 
@@ -44,24 +44,33 @@ header{
 			@include adaptiv-value("gap", 30, 10, 0);
 		}
 
-		.navigation__user{
-			display: flex;
-			@include adaptiv-value("margin-top", 12, 0, 0);
-			@include adaptiv-value("margin-bottom", 8, 4, 0);
-			@include adaptiv-value("gap", 15, 8, 0);
-
 			.user{
+				position: relative;
+				@include adaptiv-value("top", 15, 1, 0);
 				border-radius: 15px;
 				border: 2px solid $main_color;
 				padding: 6px 7px;
 				transition: 0.4s;
 
 			   &:hover{
-					color: white;
+					color: white !important;
 					background: $main_color;
 				}
 			}
-		}
+
+			.username{
+				@include adaptiv-value("margin-top", 16, 8, 0);
+				@include adaptiv-value("margin-bottom", 16, 8, 0);
+				@include adaptiv-value("font-size", 16, 10, 0);
+				color: $main_color;
+				font-weight: 700;
+				span{
+					@media (max-width: 390px){
+						display: none;
+					}
+				}
+			}
+		
 
 		.header__link{
 			@include adaptiv-value("font-size", 16, 10, 0);

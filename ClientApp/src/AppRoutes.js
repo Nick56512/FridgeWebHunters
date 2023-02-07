@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import NotFoundPage from "./pages/NotFoundPage";
+import RequireAuth from "./hoc/RequireAuth";
 
 const AppRoutes = [
   {
@@ -22,7 +23,7 @@ const AppRoutes = [
   },
   {
     path: '/ingredients',
-    element: <Ingredients />
+    element: <RequireAuth><Ingredients/></RequireAuth>
   },
   {
     path: '/signIn',

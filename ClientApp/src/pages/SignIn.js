@@ -3,15 +3,52 @@ import "../styles/css/index.css"
 import Button from "../atoms/SignButton"
 import useInput from "../hooks/useInput"
 import { useState } from "react"
+import { useLocation, useNavigate } from "react-router-dom"
+import { useStateContext } from "../context/context"
+import ErrorModal from "../organisms/ErrorModal"
 
 function SignIn(){
 
+	const {isAuth, setIsAuth, setName, setLastName} = useStateContext();
+
+	const location = useLocation()
+	const navigate = useNavigate()
+
+	const fromPage = location.state?.from?.pathname || '/'
+
 	const [modal, setModal] = useState(false)
+	const [error, setError] = useState([])
 
 	const inputEmail = useInput('')
 	const inputPassword = useInput('')
 
-	let errors = []
+	async function Login(){
+		let userData = {
+			"email": inputEmail.value,
+			"password": inputPassword.value
+		}
+			let response = await fetch('https://localhost:7018/login', {
+			method: 'POST',
+			headers: {
+			'Content-Type': 'application/json'},
+			body: JSON.stringify(userData)
+			})
+			
+			if(response.status!==400){
+				response.json().then(res=>{
+				sessionStorage.setItem('userData',JSON.stringify(res))
+				sessionStorage.setItem('access_token',res.access_token);
+				setName(res.name)
+				setLastName(res.lastname)
+				setIsAuth(true)
+				navigate('/ingredients')
+			})}
+			if(response.status == 400){
+				setError(['Неправильні дані або такого користувача не існує!'])
+				setModal(true)
+			}
+			
+	}
 
 	return(
 	<div>
@@ -21,6 +58,7 @@ function SignIn(){
 				<h2 className="title__signup">Вхід</h2>
 				<div className="signup__flex">
 					<input 
+					   autoFocus
 					   type="text"
 						value={inputEmail.value} 
 						onChange={inputEmail.onChange} 
@@ -41,25 +79,12 @@ function SignIn(){
 						<MyNavLink to={`/SignUp`}>Зареєструйтеся!</MyNavLink>
 					</div>
 					<div>
-						<Button>Готово!</Button>
+						<Button onClick={Login}>Готово!</Button>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div className={`${(modal) ? 'overlay animated show' : 'overlay animated hide'}`} onClick={() => setModal(false)}>
-			<div className="errors">
-					<ol>
-						{errors 
-							?
-							errors.map(item => (
-								<li key={item}>{item}</li>
-							))
-							:
-							null
-						}
-					</ol>
-				</div>
-			</div>
+		<ErrorModal error = {error} setModal={setModal} modal={modal}></ErrorModal>
 	</div>
 	)
 }

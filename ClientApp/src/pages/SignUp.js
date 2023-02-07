@@ -4,8 +4,11 @@ import Button from "../atoms/SignButton"
 import useInput from "../hooks/useInput"
 import registerValidation from "../validations/registerValidation"
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
+import ErrorModal from "../organisms/ErrorModal"
 
 function SignUp(){
+	const navigate = useNavigate()
 	const [errors, setErrors] = useState([])
 	const [modal, setModal] = useState(false)
 
@@ -32,7 +35,13 @@ function SignUp(){
 				body: JSON.stringify(userData)
 				
 			})
-			console.log(response)
+			if(response.status == 200){
+				navigate('/signIn')
+			}
+			else{
+				error = ['Щось пішло не так..']
+				setModal(true)
+			}
 		}
 		else{
 			setErrors(error)
@@ -48,6 +57,7 @@ function SignUp(){
 				<h2 className="title__signup">Реєстрація</h2>
 				<div className="signup__flex">
 					<input 
+						autoFocus
 					   type="text"
 						value={inputEmail.value} 
 						onChange={inputEmail.onChange} 
@@ -60,7 +70,8 @@ function SignUp(){
 							value={inputFirstName.value} 
 							onChange={inputFirstName.onChange} 
 							className="Input Input__half" 
-							placeholder="Ім'я"></input>
+							placeholder="Ім'я">
+						</input>
 						<input 
 						   type="text"
 							value={inputLastName.value} 
@@ -95,20 +106,7 @@ function SignUp(){
 				</div>
 			</div>
 		</div>
-		<div className={`${(modal) ? 'overlay animated show' : 'overlay animated hide'}`} onClick={() => setModal(false)}>
-			<div className="errors">
-					<ol>
-						{errors 
-							?
-							errors.map(item => (
-								<li key={item}>{item}</li>
-							))
-							:
-							null
-						}
-						</ol>
-				</div>
-			</div>
+		<ErrorModal error = {errors} setModal={setModal} modal={modal}></ErrorModal>
 	</div>
 	)
 }

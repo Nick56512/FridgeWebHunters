@@ -15,23 +15,29 @@
 	}
 
 	.img__title{
-		@include adaptiv-value("height", 90, 50, 0);
+		@include adaptiv-value("height", 90, 45, 0);
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		justify-content: baseline;
-		margin-left: 8px;
-		@include adaptiv-value("font-size", 23, 10, 0);
-		@include adaptiv-value("line-height", 25, 8, 0);
+		@include adaptiv-value("margin-left", 8, 6, 0);
+		@include adaptiv-value("margin-right", 8, 6, 0);
+		@include adaptiv-value("font-size", 23, 11, 0);
+		@include adaptiv-value("line-height", 25, 12, 0);
 		margin-top: 5px;
 		font-weight: 600;
 		color: $main_color;
 
+		.description{
+			@include adaptiv-value("font-size", 16, 8, 0);
+		}
+
 		.diff{
-			@include adaptiv-value("font-size", 16, 9, 0);
+			@include adaptiv-value("font-size", 16, 8, 0);
 			padding-top: 5px;
 			padding-bottom: 15px;
 		}
+
 	}
 
 
